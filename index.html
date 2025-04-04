@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Developer Learning Journey</title>
+    </head>
+    <body>
+        
+        <h1 id="title">Developer Learning Journey Survey</h1>
+        <p id="description">Help us understand how learners like you are exploring the world of programming. Fill out this short survey to share your experience, learning tools, and coding goals. Your insights can inspire others on their tech path too!</p>
+
+        <form action="#" id="survey-form">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!--text base-->
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="e.g. John Doe" required><br><br>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="e.g. johndoe@example.com" required><br><br>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" placeholder="18" min="18" max="99">
+            </fieldset>
+
+            <br>
+            
+            <fieldset>
+                <legend>Professional Status</legend>
+                <!--dropdown-->
+                <label for="dropdown">Which role best describes you?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="working-professional" selected>Working Professional</option>
+                    <option value="career-shifter">Career Shifter</option>
+                    <option value="hobbyist">Hobbyist</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <br>
+            
+            <fieldset>
+                <legend>How long have you been learning to code?</legend>
+                <!--radio-->
+                <input type="radio" id="three-months" name="coding" value="three-months">
+                <label for="three-months">Less than 3 months</label><br>
+                
+                <input type="radio" id="six-months" name="coding" value="six-months">
+                <label for="six-months">3-6 months</label><br>
+                
+                <input type="radio" id="twelve-months" name="coding" value="twelve-months">
+                <label for="twelve-months">6-12 months</label><br>
+                
+                <input type="radio" id="one-year" name="coding" value="one-year">
+                <label for="one-year">1+ years</label>
+            </fieldset>
+            
+            <br>
+            
+
+            <!--checkboxes-->
+            <fieldset>
+                <legend>What platforms are you using to learn?</legend>
+                <input type="checkbox" id="freecodecamp" name="freecodecamp" value="freecodecamp" checked>
+                <label for="freecodecamp">freeCodeCamp</label><br>
+
+                <input type="checkbox" id="youtube" name="youtube" value="youtube">
+                <label for="youtube">YouTube</label><br>
+
+                <input type="checkbox" id="coursera" name="coursera" value="coursera">
+                <label for="coursera">Coursera</label><br>
+
+                <input type="checkbox" id="books" name="books" value="books">
+                <label for="books">Books</label><br>
+            </fieldset>
+
+            <br>
+
+            <!--textarea-->
+            <textarea name="message" id="message" placeholder="Any goals or comments you'd like to share?" cols="30" rows="10"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
